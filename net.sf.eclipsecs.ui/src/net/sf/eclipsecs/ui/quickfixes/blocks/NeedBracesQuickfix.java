@@ -97,7 +97,7 @@ public class NeedBracesQuickfix extends AbstractASTResolution {
       }
 
       /**
-       * Helper method to recursivly bracify a if-statement.
+       * Helper method to recursively bracify a if-statement.
        *
        * @param ifStatement
        *          the if statement
@@ -133,6 +133,7 @@ public class NeedBracesQuickfix extends AbstractASTResolution {
         }
       }
 
+      @SuppressWarnings("unchecked")
       private Block createBracifiedCopy(AST ast, Statement body) {
         Block block = ast.newBlock();
         block.statements().add(ASTNode.copySubtree(block.getAST(), body));

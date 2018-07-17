@@ -3,7 +3,7 @@
     <parent>
         <artifactId>net.sf.eclipsecs.parent</artifactId>
         <groupId>net.sf.eclipsecs</groupId>
-        <version>8.8.0-SNAPSHOT</version>
+        <version>8.10.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>net.sf.eclipsecs.checkstyle</artifactId>
@@ -21,7 +21,7 @@
                                 <delete dir="${project.build.directory}/checkstyle-src-unpack" />
                                 <delete dir="${project.build.directory}/checkstyle-src" />
                                 <first id="cssrc">
-                                    <fileset dir="." includes="checkstyle-*-src.zip" />
+                                    <fileset dir="." includes="checkstyle-checkstyle-*.zip" />
                                 </first>
                                 <unzip src="${toString:cssrc}" dest="${project.build.directory}/checkstyle-src-unpack">
                                     <patternset>
@@ -56,6 +56,12 @@
                         </fileSet>
                     </additionalFileSets>
                 </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

@@ -2,13 +2,13 @@ Manifest-Version: 1.0
 Bundle-Name: Checkstyle Plug-in
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: net.sf.eclipsecs.core;singleton:=true
-Bundle-Version: 8.8.0.qualifier
+Bundle-Version: 8.10.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .,
  lib/dom4j-1.6.1.jar
 Bundle-Activator: net.sf.eclipsecs.core.CheckstylePlugin
 Bundle-ActivationPolicy: lazy
-Bundle-Vendor: http://eclipse-cs.sf.net/
+Bundle-Vendor: Eclipse Checkstyle Plugin Development Team
 Require-Bundle: net.sf.eclipsecs.checkstyle;visibility:=reexport
 Eclipse-BuddyPolicy: registered
 Bundle-Localization: core
@@ -40,4 +40,5 @@ Import-Package: org.eclipse.core.filebuffers,
  org.eclipse.team.core.synchronize;resolution:=optional,
  org.osgi.framework,
  org.osgi.service.prefs
+Automatic-Module-Name: net.sf.eclipsecs.core
 
