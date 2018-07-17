@@ -9,6 +9,7 @@
     <artifactId>net.sf.eclipsecs.sample</artifactId>
     <packaging>eclipse-plugin</packaging>
     <name>eclipse-cs Sample Plugin</name>
+    
     <repositories>
     <repository>
       <id>jgit-repository</id>
