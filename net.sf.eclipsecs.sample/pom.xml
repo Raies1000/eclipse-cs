@@ -9,4 +9,16 @@
     <artifactId>net.sf.eclipsecs.sample</artifactId>
     <packaging>eclipse-plugin</packaging>
     <name>eclipse-cs Sample Plugin</name>
+    <repositories>
+    <repository>
+      <id>jgit-repository</id>
+      <url>http://download.eclipse.org/releases/oxygen</url>
+    </repository>
+  </repositories>
+    
+    <dependencies>
+    <dependency>
+    <groupId>org.eclipse.jgit</groupId>
+    <artifactId>org.eclipse.jgit</artifactId>
+    <version>4.11.0.201803080745-r</version></dependency></dependencies>
 </project>

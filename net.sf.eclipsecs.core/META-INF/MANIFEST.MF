@@ -9,7 +9,7 @@ Bundle-ClassPath: .,
 Bundle-Activator: net.sf.eclipsecs.core.CheckstylePlugin
 Bundle-ActivationPolicy: lazy
 Bundle-Vendor: Eclipse Checkstyle Plugin Development Team
-Require-Bundle: net.sf.eclipsecs.checkstyle;visibility:=reexport
+Require-Bundle: net.sf.eclipsecs.checkstyle;visibility:=reexport,org.eclipse.jgit
 Eclipse-BuddyPolicy: registered
 Bundle-Localization: core
 Export-Package: net.sf.eclipsecs.core,
@@ -39,6 +39,9 @@ Import-Package: org.eclipse.core.filebuffers,
  org.eclipse.team.core.subscribers;resolution:=optional,
  org.eclipse.team.core.synchronize;resolution:=optional,
  org.osgi.framework,
- org.osgi.service.prefs
+  org.osgi.service.prefs,
+ org.eclipse.jgit.api,
+ org.eclipse.jgit.errors,
+ org.eclipse.jgit.lib
 Automatic-Module-Name: net.sf.eclipsecs.core
 
